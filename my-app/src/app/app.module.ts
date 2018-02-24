@@ -11,6 +11,7 @@ import { GradingComponent } from './grading/grading.component';
 import { GradingListStudentComponent } from './grading-list-student/grading-list-student.component';
 
 import {CreateCourseComponent} from './create-course/create-course.component';
+import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 
 
 
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
 
 
   {path: 'create_course', component: CreateCourseComponent},
+  {path: 'enroll_course', component: EnrollCourseComponent},
 
   {path: 'grading', component: GradingComponent}
 
@@ -36,6 +38,7 @@ const appRoutes: Routes = [
     GradingComponent,
     GradingListStudentComponent,
     CreateCourseComponent,
+    EnrollCourseComponent,
 
   ],
   imports: [
