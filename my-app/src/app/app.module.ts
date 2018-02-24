@@ -7,11 +7,13 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import { GradingComponent } from './grading/grading.component';
+import { CourseListComponentComponent } from './course-list-component/course-list-component.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'grading', component: GradingComponent}
+  {path: 'grading', component: GradingComponent},
+  {path: 'courseList', component: CourseListComponentComponent}
 ];
 
 @NgModule({
@@ -19,7 +21,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    GradingComponent
+    GradingComponent,
+    CourseListComponentComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(
