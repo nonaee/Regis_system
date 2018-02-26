@@ -8,21 +8,29 @@ import {HomeComponent} from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 
 import { GradingComponent } from './grading/grading.component';
+
+import { CourseListComponentComponent } from './course-list-component/course-list-component.component';
+
 import { GradingListStudentComponent } from './grading-list-student/grading-list-student.component';
 
 import {CreateCourseComponent} from './create-course/create-course.component';
+import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
+
 
 
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'grading', component: GradingComponent},
+  {path: 'courseList', component: CourseListComponentComponent},
 
   {path: 'grading', component: GradingComponent},
   {path: 'grading-list-student',component:GradingListStudentComponent},
 
 
   {path: 'create_course', component: CreateCourseComponent},
+  {path: 'enroll_course', component: EnrollCourseComponent},
 
   {path: 'grading', component: GradingComponent}
 
@@ -34,9 +42,11 @@ const appRoutes: Routes = [
     LoginComponent,
     HomeComponent,
     GradingComponent,
+    CourseListComponentComponent,
     GradingListStudentComponent,
     CreateCourseComponent,
-
+    CreateCourseComponent,
+    EnrollCourseComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(
