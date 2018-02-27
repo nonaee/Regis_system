@@ -7,16 +7,15 @@ import {LoginComponent} from './login/login.component';
 import {HomeComponent} from './home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 
-import { GradingComponent } from './grading/grading.component';
+import {GradingComponent} from './grading/grading.component';
 
-import { CourseListComponentComponent } from './course-list-component/course-list-component.component';
+import {CourseListComponentComponent} from './course-list-component/course-list-component.component';
 
-import { GradingListStudentComponent } from './grading-list-student/grading-list-student.component';
+import {GradingListStudentComponent} from './grading-list-student/grading-list-student.component';
 
 import {CreateCourseComponent} from './create-course/create-course.component';
-import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
-
-
+import {EnrollCourseComponent} from './enroll-course/enroll-course.component';
+import {NavbarComponent} from './navbar/navbar.component';
 
 
 const appRoutes: Routes = [
@@ -24,15 +23,22 @@ const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'grading', component: GradingComponent},
   {path: 'courseList', component: CourseListComponentComponent},
-
-  {path: 'grading', component: GradingComponent},
-  {path: 'grading-list-student',component:GradingListStudentComponent},
+  {path: 'grading-list-student', component: GradingListStudentComponent},
 
 
   {path: 'create_course', component: CreateCourseComponent},
   {path: 'enroll_course', component: EnrollCourseComponent},
+  {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
 
-  {path: 'grading', component: GradingComponent}
+  {
+    path: '**',
+    redirectTo: '/login'
+  }
+
 
 ];
 
@@ -46,7 +52,8 @@ const appRoutes: Routes = [
     GradingListStudentComponent,
     CreateCourseComponent,
     CreateCourseComponent,
-    EnrollCourseComponent
+    EnrollCourseComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(

@@ -3,56 +3,61 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 th, td {
   padding: 5px;
-  text-align:center;
-  margin-top:50px;
-        border: 1px solid Gainsboro;
-        padding: 8px;
-        border-radius: 3px;
-        box-shadow: 1px 1px 2px 2px rgba(0,0,0,.1);
-        background: White;
-        height: 70px;
-}
-.container{
-  align : center;
-
-}
-.container1{
-font-family: Verdana, Helvetica, sans-serif;
-      height:fill;
-      background: WhiteSmoke; /* For browsers that do not support gradients */
-      /*background: -webkit-linear-gradient(Snow, WhiteSmoke); /* For Safari 5.1 to 6.0 */
-      /*background: -o-linear-gradient(Snow, WhiteSmoke); /* For Opera 11.1 to 12.0 */
-      /*background: -moz-linear-gradient(Snow, WhiteSmoke); /* For Firefox 3.6 to 15 */
-      /*background: linear-gradient(Snow, WhiteSmoke); /* Standard syntax (must be last) */
-      background-size: 100% 100%, auto;
-}
-hr{
-width : 75%;
-}
-.button2{
-     background: -webkit-linear-gradient(Cyan, DarkTurquoise); /* For Safari 5.1 to 6.0 */
-     background: -o-linear-gradient(Cyan, DarkTurquoise); /* For Opera 11.1 to 12.0 */
-     background: -moz-linear-gradient(Cyan, DarkTurquoise); /* For Firefox 3.6 to 15 */
-     background: linear-gradient(Cyan, DarkTurquoise); /* Standard syntax (must be last) */
-     color: White;
-     border: 0px solid white;
-     border-radius: 5px;
-     width: 80%;
-     height:35px;
-     box-shadow: 1px 1px 2px 2px rgba(0,0,0,.1);
-     margin-left:20px;
+  text-align: center;
+  margin-top: 50px;
+  border: 1px solid Gainsboro;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .1);
+  background: White;
+  height: 70px;
 }
 
+.container {
+  align: center;
+
+}
+
+.container1 {
+  font-family: Verdana, Helvetica, sans-serif;
+  height: auto;
+  background: WhiteSmoke; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(Snow, WhiteSmoke); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(Snow, WhiteSmoke); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(Snow, WhiteSmoke); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(Snow, WhiteSmoke); /* Standard syntax (must be last) */
+  background-size: 100% 100%, auto;
+}
+
+hr {
+  width: 75%;
+}
+
+.button2 {
+  background: -webkit-linear-gradient(Cyan, DarkTurquoise); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(Cyan, DarkTurquoise); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(Cyan, DarkTurquoise); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(Cyan, DarkTurquoise); /* Standard syntax (must be last) */
+  color: White;
+  border: 0px solid white;
+  border-radius: 5px;
+  width: 80%;
+  height: 35px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .1);
+  margin-left: 20px;
+}
 
 .button2:hover {
-     background: -webkit-linear-gradient(#35e0e0, #03b7b7); /* For Safari 5.1 to 6.0 */
-     background: -o-linear-gradient(#35e0e0, #03b7b7); /* For Opera 11.1 to 12.0 */
-     background: -moz-linear-gradient(#35e0e0, #03b7b7); /* For Firefox 3.6 to 15 */
-     background: linear-gradient(#35e0e0, #03b7b7); /* Standard syntax (must be last) */
-     color: #white;
+  background: -webkit-linear-gradient(#35e0e0, #03b7b7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#35e0e0, #03b7b7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#35e0e0, #03b7b7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#35e0e0, #03b7b7); /* Standard syntax (must be last) */
+  color: white;
 }
-.dropdown-menu{
-margin-left:2000px;
+
+.dropdown-menu {
+  margin-left: 2000px;
 }

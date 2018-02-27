@@ -38,14 +38,10 @@ label{
              }
 .container{
 margin-top:0px;
-    height: fill;
-    background: WhiteSmoke; /* For browsers that do not support gradients */
-    /*background: -webkit-linear-gradient(Snow, WhiteSmoke); /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(Snow, WhiteSmoke); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(Snow, WhiteSmoke); /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(Snow, WhiteSmoke); /* Standard syntax (must be last) */
+    height: auto;
+    background: WhiteSmoke;
     background-size: 100% 100%, auto;
-    width: fill;
+    width: auto;
 }
 .button2{
 margin-left: 100px;
@@ -66,5 +62,5 @@ margin-left: 100px;
      background: -o-linear-gradient(#35e0e0, #03b7b7); /* For Opera 11.1 to 12.0 */
      background: -moz-linear-gradient(#35e0e0, #03b7b7); /* For Firefox 3.6 to 15 */
      background: linear-gradient(#35e0e0, #03b7b7); /* Standard syntax (must be last) */
-     color: #white;
+     color: white;
 }

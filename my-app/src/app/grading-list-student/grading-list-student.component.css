@@ -20,7 +20,7 @@ th, td {
 }
 .container1{
 font-family: Verdana, Helvetica, sans-serif;
-      height:fill;
+      height:auto;
       background: WhiteSmoke; /* For browsers that do not support gradients */
       /*background: -webkit-linear-gradient(Snow, WhiteSmoke); /* For Safari 5.1 to 6.0 */
       /*background: -o-linear-gradient(Snow, WhiteSmoke); /* For Opera 11.1 to 12.0 */
@@ -51,5 +51,5 @@ width : 75%;
      background: -o-linear-gradient(#35e0e0, #03b7b7); /* For Opera 11.1 to 12.0 */
      background: -moz-linear-gradient(#35e0e0, #03b7b7); /* For Firefox 3.6 to 15 */
      background: linear-gradient(#35e0e0, #03b7b7); /* Standard syntax (must be last) */
-     color: #white;
+     color: white;
 }
