@@ -1,4 +1,4 @@
-table, td {
+table, td.td1 {
   margin-top: 10px;
   border: 1px solid Gainsboro;
   padding: 8px;
@@ -70,12 +70,7 @@ div.container1 {
 }
 
 div.container_photo {
-  margin-top: 0px;
-  border: 1px solid Gainsboro;
-  padding: 8px;
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .1);
-  background: White;
+
   height: 250px;
   width: 75%;
   margin-left: 160px;
@@ -105,5 +100,18 @@ th.th1 {
   width: 280px;
 
 }
+th.th3{
+  width : 30%;
+  text-align:center;
 
+}
+tr.tr1{
+}
+td.td3{
+    padding: 8px;
+    border-radius: 3px;
 
+    height: 40px;
+    width: 600px;
+
+}

@@ -37,11 +37,11 @@ label{
              background: White;
              }
 .container{
-margin-top:0px;
-    height: auto;
+    margin-top:0px;
+    height: fill;
     background: WhiteSmoke;
     background-size: 100% 100%, auto;
-    width: auto;
+    width: fill;
 }
 .button2{
 margin-left: 100px;
