@@ -4,11 +4,11 @@
   <div class="container">
     <div class="magintop">
       <h2>LOGIN</h2>
-      <form class="form-horizontal" routerLink="/home" routerLinkActive="active">
+      <form class="form-horizontal"   >
         <div class="form-group1">
-          <label class="" for="email"></label>
+          <label class="" for="user"></label>
           <div class="">
-            <input type="email" class="form-control" id="email" placeholder="Enter username" name="email">
+            <input type="text" class="form-control" id="user" placeholder="Enter username" name="email">
           </div>
         </div>
         <div class="form-group1">
@@ -27,10 +27,12 @@
         </div>
         <div class="form-group">
           <div class="button">
-            <button class="button button2">LOGIN</button>
+            <a routerLink="/home" routerLinkActive="active"><button class="button button2">LOGIN</button></a>
           </div>
         </div>
+
       </form>
+
     </div>
   </div>
 </div>

@@ -28,16 +28,9 @@ const appRoutes: Routes = [
 
   {path: 'create_course', component: CreateCourseComponent},
   {path: 'enroll_course', component: EnrollCourseComponent},
-  {
-    path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  },
 
-  {
-    path: '**',
-    redirectTo: '/login'
-  }
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: '**', redirectTo: '/login'}
 
 
 ];
@@ -53,7 +46,8 @@ const appRoutes: Routes = [
     CreateCourseComponent,
     CreateCourseComponent,
     EnrollCourseComponent,
-    NavbarComponent
+    NavbarComponent,
+
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(
