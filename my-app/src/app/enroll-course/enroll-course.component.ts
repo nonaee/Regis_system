@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CourseDataMockService} from '../service/course-data-mock.service';
+import {Course} from '../entity/course';
 
 @Component({
   selector: 'app-enroll-course',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnrollCourseComponent implements OnInit {
 
-  constructor() { }
+  courses : Course[];
+  constructor(private courseDataMockService:CourseDataMockService) { }
 
   ngOnInit() {
+    this.courseDataMockService.getCoursesData().subscribe(courses => this.courses =courses);
   }
 
 }

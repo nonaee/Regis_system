@@ -16,6 +16,8 @@ import {GradingListStudentComponent} from './grading-list-student/grading-list-s
 import {CreateCourseComponent} from './create-course/create-course.component';
 import {EnrollCourseComponent} from './enroll-course/enroll-course.component';
 import {NavbarComponent} from './navbar/navbar.component';
+import {CourseDataMockService} from './service/course-data-mock.service';
+import {HttpModule} from '@angular/http';
 
 
 const appRoutes: Routes = [
@@ -53,9 +55,10 @@ const appRoutes: Routes = [
     BrowserModule, RouterModule.forRoot(
       appRoutes,
       {enableTracing: false}
-    )
+    ),HttpModule
   ],
-  providers: [],
+  providers: [CourseDataMockService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
