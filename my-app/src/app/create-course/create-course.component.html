@@ -11,23 +11,21 @@
             <label for="Cname">Course Name</label><br>
             <label for="Cid">Course ID</label><br>
             <label for="Cidd">Course Credits</label><br>
-            <label for="Csemeter">Semeter</label><br>
             <label for="CTeacher">Teacher</label><br>
             <label for="CSeat">Seat</label><br>
             <label for="CTime">Times</label><br></th>
 
           <th>
 
-            <input type="text" class="Cname" id="Cname" placeholder="Course Name" name="Cname"><br>
-            <input type="text" class="Cid" id="Cid" placeholder="Course ID" name="Cid"><br>
-            <input type="text" class="Cidd" id="Cidd" placeholder="Course Credits" name="Cidd"><br>
-            <input type="text" class="Csemeter" id="Csemeter" placeholder="Semeter" name="Csemeter"><br>
-            <input type="text" class="CTeacher" id="CTeacher" placeholder="Teacher" name="CTeacher"><br>
-            <input type="text" class="CSeat" id="CSeat" placeholder="Seat" name="CSeat"><br>
-            <input type="text" class="CTime" id="CTime" placeholder="Times" name="CTime"><br>
+            <input type="text" class="Cname " id="Cname" placeholder="Course Name" name="courseName" [(ngModel)]="course.courseName"><br>
+            <input type="text" class="Cid" id="Cid" placeholder="Course ID" name="courseID" [(ngModel)]="course.courseID"><br>
+            <input type="text" class="Cidd" id="Cidd" placeholder="Course Credits" name="courseCredits" [(ngModel)]="course.courseCredits"><br>
+            <input type="text" class="CTeacher" id="CTeacher" placeholder="Teacher" name="teacher" [(ngModel)]="course.teacher"><br>
+            <input type="text" class="CSeat" id="CSeat" placeholder="Seat" name="seat" [(ngModel)]="course.seat"><br>
+            <input type="text" class="CTime" id="CTime" placeholder="Times" name="times" [(ngModel)]="course.times"><br>
         </tr>
         <a routerLink="/courseList" routerLinkActive="active">
-          <button class="button button2">SUBMIT</button>
+          <button type="submit" class="button button2" (click)="createCourse(course)">SUBMIT</button>
         </a>
 
       </div>
