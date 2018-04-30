@@ -18,39 +18,19 @@
         <th>TEACHER</th>
         <th>ADD</th>
       </tr>
-      <tr>
-        <td>953333</td>
-        <td>Testing</td>
-        <td>3</td>
-        <td>Monday</td>
-        <td>12.30-15.00</td>
+      <tr *ngFor="let course of courses" >
+        <td>{{course.courseID }}</td>
+        <td>{{course.courseName }}</td>
+        <td>{{course.courseCredits }}</td>
         <td></td>
+        <td>{{course.times }}</td>
+        <td>{{course.teacher }}</td>
         <td><a routerLink="/home" routerLinkActive="active">
           <button class="button button2">ADD</button>
         </a></td>
       </tr>
-      <tr>
-        <td>953456</td>
-        <td>Android</td>
-        <td>3</td>
-        <td>Tuesday</td>
-        <td>9.30-11.00</td>
-        <td></td>
-        <td><a routerLink="/home" routerLinkActive="active">
-          <button class="button button2">ADD</button>
-        </a></td>
-      </tr>
-      <tr>
-        <td>987346</td>
-        <td>Math for SE</td>
-        <td>3</td>
-        <td>Tuesday</td>
-        <td>12.30-15.00</td>
-        <td></td>
-        <td><a routerLink="/home" routerLinkActive="active">
-          <button class="button button2">ADD</button>
-        </a></td>
-      </tr>
+
+
     </table>
   </div>
 </div>
