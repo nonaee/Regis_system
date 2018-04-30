@@ -1,25 +1,27 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CourseListComponentComponent } from './course-list-component.component';
+import {Course} from "../entity/course";
 
 describe('CourseListComponentComponent', () => {
   let component: CourseListComponentComponent;
   let fixture: ComponentFixture<CourseListComponentComponent>;
+  let course: Course;
+  let courseId: string;
 
-  beforeEach(async(() => {
+  beforeEach(()=>{
     TestBed.configureTestingModule({
-      declarations: [ CourseListComponentComponent ]
-    })
-    .compileComponents();
-  }));
+      providers: [
+        CourseListComponentComponent,
+        Course
+      ]
+    });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CourseListComponentComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = TestBed.get(CourseListComponentComponent);
+    course = TestBed.get(Course);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('findCourseById(id:string):should return first course object by course ID',()=>{
+    courseId = '953333';
+  })
 });
