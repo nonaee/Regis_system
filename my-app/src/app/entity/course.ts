@@ -5,6 +5,7 @@ export class Course{
   courseCredits:number;
   teacher:string;
   seat:number;
+  grade:string;
   times:string;
 
 

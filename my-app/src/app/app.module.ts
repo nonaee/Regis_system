@@ -19,6 +19,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {CourseDataMockService} from './service/course-data-mock.service';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
+import {StudentDataMockService} from './service/student-data-mock.service';
 
 
 
@@ -59,7 +60,7 @@ const appRoutes: Routes = [
       {enableTracing: false}
     ),HttpModule,FormsModule
   ],
-  providers: [ CourseDataMockService,
+  providers: [ CourseDataMockService,StudentDataMockService
   ],
   bootstrap: [AppComponent]
 })

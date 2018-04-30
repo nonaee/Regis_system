@@ -16,6 +16,7 @@ export class CourseDataMockService {
    "courseCredits":3,
    "teacher":"Aj.a",
    "seat":50,
+   "grade":"A",
    "times":"12.30-15.00"
  },{
    "id" : 2,
@@ -24,6 +25,7 @@ export class CourseDataMockService {
    "courseCredits":3,
    "teacher":"Aj.a",
    "seat":50,
+   "grade":"A",
    "times":"12.30-15.00"
  },{
    "id" : 3,
@@ -32,6 +34,7 @@ export class CourseDataMockService {
    "courseCredits":3,
    "teacher":"Aj.a",
    "seat":50,
+   "grade":"A",
    "times":"12.30-15.00"
  }
  ];

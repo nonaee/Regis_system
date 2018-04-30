@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Student} from '../entity/student';
+import {StudentDataMockService} from '../service/student-data-mock.service';
+import * as _ from "lodash";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  student: Student;
+
+  constructor(private studentDataMockService: StudentDataMockService) {
+  }
 
   ngOnInit() {
+    this.studentDataMockService.getStudentsData()
+      .subscribe(student => this.student = student);
+  }
+
+  calGPA() {
+
+  }
+
+  calTotalCredit() {
+    for (let course of this.student.enrolledCourse) {
+      var num;
+      num = num + course.courseCredits;
+    }
+
+    return num;
+
+  }
+
+  calTotalPrice() {
+
+
   }
 
 }

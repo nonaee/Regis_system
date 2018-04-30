@@ -3,9 +3,7 @@
     <div class="container_photo">
       <div class="containerin">
       <tr  >
-      <td class="td1" style="width:25%"><img
-      src="https://2.bp.blogspot.com/-uqQSWDCBi3k/VygiUXbem6I/AAAAAAAAMZY/WejGhMJc2jIS_RGjJnsG6CRqw_tJVAfvwCKgB/s1600/main-271-235x235.png"
-      class="Picture">
+      <td class="td1" style="width:25%"><img src="{{student.image}}">
     </td>
 
    <td class="td1" style="width:50%">
@@ -13,15 +11,15 @@
    <span>
         <tr class="tr1">
           <th class="th3">STUDENT NAME</th>
-          <td class="td3">Dino Nomo</td>
+          <td class="td3">{{student.fullname}}</td>
         </tr>
         <tr>
           <th class="th3">STUDENT ID</th>
-          <td class="td3">000001</td>
+          <td class="td3">{{student.studentId}}</td>
         </tr>
         <tr>
           <th class="th3">USERNAME</th>
-          <td class="td3">Dino_nomo</td>
+          <td class="td3">{{student.username}}</td>
         </tr>
 
   </span>
@@ -38,42 +36,20 @@
         <th class="th2">COURSE ID</th>
         <th class="th2">COURSE NAME</th>
         <th class="th2">CREDITS</th>
-        <th class="th2">DAY</th>
         <th class="th2">TIME</th>
         <th class="th2">GRADE</th>
         <th class="th2">WITHDRAW</th>
       </tr>
-      <tr>
-        <td class="td1">953333</td>
-        <td class="td1">Testing</td>
-        <td class="td1">3</td>
-        <td class="td1">Monday</td>
-        <td class="td1">12.30-15.00</td>
-        <td class="td1"></td>
+      <tr *ngFor="let course of student.enrolledCourse" >
+        <td class="td1">{{course.courseID }}</td>
+        <td class="td1">{{course.courseName }}</td>
+        <td class="td1">{{course.courseCredits }}</td>
+        <td class="td1">{{course.times }}</td>
+        <td class="td1">{{course.grade }}</td>
         <td class="td1">
           <button class="button button2">WITHDRAW</button>
       </tr>
-      <tr>
-        <td class="td1">953456</td>
-        <td class="td1">Android</td>
-        <td class="td1">3</td>
-        <td class="td1">Tuesday</td>
-        <td class="td1">9.30-11.00</td>
-        <td class="td1"></td>
-        <td class="td1">
-          <button class="button button2">WITHDRAW</button>
-      </tr>
-      <tr>
-        <td class="td1">987346</td>
-        <td class="td1">Math for SE</td>
-        <td class="td1">3</td>
-        <td class="td1">Tuesday</td>
-        <td class="td1">12.30-15.00</td>
-        <td class="td1"></td>
-        <td class="td1">
-          <button class="button button2">WITHDRAW</button>
-        </td>
-      </tr>
+
 
 
     </table>
@@ -84,7 +60,7 @@
         <th>GPA</th>
       </tr>
       <tr>
-        <td class="td1">9 Credits</td>
+        <td class="td1">{{calTotalCredit()}}</td>
         <td class="td1">180 Baht</td>
         <td class="td1">3.00</td>
       </tr>
