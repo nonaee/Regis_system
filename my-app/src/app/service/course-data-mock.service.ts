@@ -18,7 +18,7 @@ export class CourseDataMockService {
    "seat":50,
    "times":"12.30-15.00"
  },{
-   "id" : 1,
+   "id" : 2,
    "courseName": "Testing",
    "courseID":"953333",
    "courseCredits":3,
@@ -26,7 +26,7 @@ export class CourseDataMockService {
    "seat":50,
    "times":"12.30-15.00"
  },{
-   "id" : 1,
+   "id" : 3,
    "courseName": "Testing",
    "courseID":"953333",
    "courseCredits":3,
@@ -39,8 +39,15 @@ export class CourseDataMockService {
   constructor(private http: Http) { }
 
   getCoursesData(){
-    return Observable.create((subscriber:Subscriber<Course[]>)=>subscriber.next(this.courses));
+    return new Observable<Course[]
+      >((subscriber:Subscriber<Course[]>)=>subscriber.next(this.courses));
   }
+
+  createCourse(course:Course){
+    course.id = this.courses.length+1;
+    this.courses.push(course);
+  }
+
 
 
 

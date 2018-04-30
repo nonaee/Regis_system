@@ -9,7 +9,7 @@
       "seat":50,
       "times":"12.30-15.00"
     },
-    {"id" : 1,
+    {"id" : 2,
       "courseName": "Testing",
       "courseID":"953333",
       "courseCredits":3,
@@ -17,7 +17,7 @@
       "seat":50,
       "times":"12.30-15.00"
     },
-    {"id" : 1,
+    {"id" : 3,
       "courseName": "Testing",
       "courseID":"953333",
       "courseCredits":3,

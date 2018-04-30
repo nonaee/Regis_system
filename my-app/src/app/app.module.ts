@@ -18,6 +18,8 @@ import {EnrollCourseComponent} from './enroll-course/enroll-course.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {CourseDataMockService} from './service/course-data-mock.service';
 import {HttpModule} from '@angular/http';
+import {FormsModule} from '@angular/forms';
+
 
 
 const appRoutes: Routes = [
@@ -55,9 +57,9 @@ const appRoutes: Routes = [
     BrowserModule, RouterModule.forRoot(
       appRoutes,
       {enableTracing: false}
-    ),HttpModule
+    ),HttpModule,FormsModule
   ],
-  providers: [CourseDataMockService,
+  providers: [ CourseDataMockService,
   ],
   bootstrap: [AppComponent]
 })
