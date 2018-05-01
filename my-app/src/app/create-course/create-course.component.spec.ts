@@ -1,25 +1,24 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CreateCourseComponent } from './create-course.component';
+import {Course} from "../entity/course";
 
 describe('CreateCourseComponent', () => {
   let component: CreateCourseComponent;
   let fixture: ComponentFixture<CreateCourseComponent>;
+  let course: Course;
 
-  beforeEach(async(() => {
+
+  beforeEach(()=>{
     TestBed.configureTestingModule({
-      declarations: [ CreateCourseComponent ]
+      providers: [CreateCourseComponent,
+      Course]
     })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CreateCourseComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = TestBed.get(CreateCourseComponent);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('should show Create success message when course is added',()=>{
+    component.createCourse(course);
+    expect(component.isComplete).toBeTruthy();
+  })
 });

@@ -9,7 +9,5 @@ describe('CourseDataMockService', () => {
     });
   });
 
-  it('should be created', inject([CourseDataMockService], (service: CourseDataMockService) => {
-    expect(service).toBeTruthy();
-  }));
+
 });

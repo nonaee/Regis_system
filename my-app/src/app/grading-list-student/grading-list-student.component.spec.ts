@@ -6,20 +6,5 @@ describe('GradingListStudentComponent', () => {
   let component: GradingListStudentComponent;
   let fixture: ComponentFixture<GradingListStudentComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ GradingListStudentComponent ]
-    })
-    .compileComponents();
-  }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(GradingListStudentComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
