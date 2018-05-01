@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   calTotalCredit() {
     for (let course of this.student.enrolledCourse) {
       var num;
-      num = num + course.courseCredits;
+      num = 3 + course.courseCredits;
     }
 
     return num;
