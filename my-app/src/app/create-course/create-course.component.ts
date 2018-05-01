@@ -11,21 +11,21 @@ import {Router} from '@angular/router';
 })
 export class CreateCourseComponent implements OnInit {
   course: any = {};
+  isComplete: boolean;
 
   constructor(private courseDataMockService: CourseDataMockService, private router: Router) {
   }
 
   ngOnInit() {
     this.course = new Course();
+    this.createCourse(this.course);
   }
 
   createCourse(course: Course) {
+    this.isComplete = true;
     console.log(course);
     this.courseDataMockService.createCourse(course);
     alert("Create complete");
     this.router.navigate(['/enroll_course']);
-
-
-
   }
 }
