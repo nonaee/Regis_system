@@ -1,14 +1,14 @@
-package com.example.regis_system.dao;
+package com.example.regis_system.Dao;
 
 import com.example.regis_system.entity.Course;
 
 import java.util.List;
 
-public interface courseDao {
+public interface CourseDao {
     List<Course> getCourses();
     List<Course> getCoursesSearch(String searchText);
     Course findById(long id);
-    Course addProduct(Course course);
+    Course addCourse(Course course);
     Course findByName(String searchName);
-    Course updateProduct(Course course);
+    Course updateCourse(Course course);
 }

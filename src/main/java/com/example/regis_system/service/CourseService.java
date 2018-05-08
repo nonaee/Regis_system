@@ -4,7 +4,7 @@ import com.example.regis_system.entity.Course;
 
 import java.util.List;
 
-public interface courseService {
+public interface CourseService {
     List<Course> getCourses();
     Course findById(long id);
     Course addCourse(Course course);

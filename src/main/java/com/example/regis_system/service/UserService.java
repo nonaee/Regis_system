@@ -1,4 +1,4 @@
 package com.example.regis_system.service;
 
-public class userService {
+public class UserService {
 }

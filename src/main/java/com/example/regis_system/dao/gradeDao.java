@@ -1,4 +1,4 @@
-package com.example.regis_system.dao;
+package com.example.regis_system.Dao;
 
-public class gradeDao {
+public interface GradeDao {
 }

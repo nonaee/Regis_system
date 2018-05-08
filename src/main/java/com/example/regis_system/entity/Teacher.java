@@ -1,4 +1,4 @@
 package com.example.regis_system.entity;
 
-public class gradingList {
+public class Teacher {
 }

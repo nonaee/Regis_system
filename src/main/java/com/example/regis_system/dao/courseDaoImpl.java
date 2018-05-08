@@ -1,28 +1,40 @@
-package com.example.regis_system.dao;
+package com.example.regis_system.Dao;
+
 
 import com.example.regis_system.entity.Course;
+import com.example.regis_system.repository.CourseRepository;
+import com.google.common.collect.Lists;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class courseDaoImpl implements courseDao {
+public class CourseDaoImpl implements CourseDao {
+    CourseRepository courseRepository;
+    @Autowired
+    public void setCourseRepository(CourseRepository courseRepository) {
+        this.courseRepository = courseRepository;
+    }
+
+
     @Override
     public List<Course> getCourses() {
-        return null;
+        return Lists.newArrayList(courseRepository.findAll());
     }
 
     @Override
     public List<Course> getCoursesSearch(String searchText) {
-        return null;
+        return courseRepository.findByCourseNameIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(searchText,searchText);
+
     }
 
     @Override
     public Course findById(long id) {
-        return null;
+        return courseRepository.findById(id);
     }
 
     @Override
-    public Course addProduct(Course course) {
-        return null;
+    public Course addCourse(Course course) {
+        return courseRepository.save(course);
     }
 
     @Override
@@ -31,7 +43,7 @@ public class courseDaoImpl implements courseDao {
     }
 
     @Override
-    public Course updateProduct(Course course) {
-        return null;
+    public Course updateCourse(Course course) {
+        return courseRepository.save(course);
     }
 }
