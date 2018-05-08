@@ -1,4 +1,6 @@
-package com.example.regis_system.Repository;
+package com.example.regis_system.repository;
 
-public interface courseRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface courseRepository extends CrudRepository {
 }

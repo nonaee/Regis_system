@@ -1,4 +1,4 @@
-package com.example.regis_system.Dao;
+package com.example.regis_system.dao;
 
 public class gradeDaoImpl {
 }
